@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+void palindrome_string(string str)
+{
+	string previous_str=str;
+	reverse(str.begin(),str.end());
+	
+	if(str==previous_str)
+	cout<<"YES";
+	else 
+	cout<<"NO";
+}
+
+int main()
+{
+	string str;
+	cin>>str;
+	palindrome_string(str);
+	return 0;
+}
